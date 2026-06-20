@@ -1,6 +1,7 @@
-Daraz Roman Urdu Aspect-Based Sentiment Analysis (ABSA)
+Aspect Based Sentiment Analysis of Daraz Product Reviews
 Project Overview
-This repository contains a complete Aspect-Based Sentiment Analysis (ABSA) pipeline built specifically for code-mixed Roman Urdu e-commerce reviews (Daraz).Unlike standard NLP projects that rely on libraries like Scikit-Learn, PyTorch, or TensorFlow, the core Machine Learning models, mathematical vectorizers, and extraction algorithms in this project were built entirely from scratch using raw Python.🚀Key Features
+This repository contains a complete Aspect-Based Sentiment Analysis (ABSA) pipeline built specifically for code-mixed Roman Urdu e-commerce reviews (Daraz).Unlike standard NLP projects that rely on libraries like Scikit-Learn, PyTorch, or TensorFlow, the core Machine Learning models, mathematical vectorizers, and extraction algorithms in this project were built entirely from scratch using raw Python.
+Key Features
 Custom Conditional Random Field (CRF): A Linear-Chain CRF trained via Stochastic Gradient Ascent with Viterbi decoding to dynamically extract product aspects (e.g., "battery", "screen").
 Clause-Bounded Context Windows: Syntactic splitting using contrastive conjunctions (e.g., 'lekin', 'magar') to prevent sentiment bleeding in multi-aspect reviews.
 Lexicon-Boosted TF-IDF: A custom TF-IDF vectorizer that mathematically alters word weights based on hardcoded sentiment multipliers and negation intensifiers (handling the "bohat bekar" problem).
